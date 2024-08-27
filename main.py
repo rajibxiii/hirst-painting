@@ -3,7 +3,7 @@ import turtle as t
 import random
 
 # rgb_colors = []
-# colors = cg.extract('spot-paint.webp', 6)
+# colors = cg.extract('spot-paint.webp', 20)
 
 # for i in colors:
 #     red = i.rgb.r
@@ -19,6 +19,7 @@ t.colormode(255)
 turtle_obj = t.Turtle()
 turtle_obj.speed("fastest")
 turtle_obj.penup()
+turtle_obj.hideturtle()
 turtle_obj.setheading(225)
 turtle_obj.forward(300)
 turtle_obj.setheading(0)
@@ -35,8 +36,6 @@ for i in range (1, numberOfDots+1):
         turtle_obj.setheading(180)
         turtle_obj.forward(500)
         turtle_obj.setheading(0)
-
-
 
 screen_obj = t.Screen()
 screen_obj.exitonclick()
